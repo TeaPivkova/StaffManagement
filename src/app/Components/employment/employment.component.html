@@ -1,1 +1,47 @@
-<p>employment works!</p>
+<div class="container">
+<div class="row">
+  <div class="col-sm-12 col-md-4 col-lg-4 cards">
+    <mat-card class="employment_card">
+      <div style="text-align: center">
+        <img src="../../../assets/images/user-icon.svg" width="80px">
+      </div>
+
+      <mat-form-field style="width: 100%">
+        <mat-select value="option1">
+          <mat-option value="option1">Employment</mat-option>
+          <mat-option value="option2">Performance</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-card-content>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Profile <div class="complete">Complete</div></li>
+          <li class="list-group-item">Address <div class="incomplete">Incomplete</div></li>
+          <li class="list-group-item">Identity <div class="complete">Completed</div></li>
+          <li class="list-group-item">Work History <div class="incomplete">Incomplete</div></li>
+          <li class="list-group-item">Employment terms <div class="incomplete">Incomplete</div></li>
+        </ul>
+      </mat-card-content>
+
+      <mat-card-actions style="width: 100%; text-align: center">
+        <button class=" btn btn-primary"> INVITE TO COMPLETE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="col-sm-12 col-md-8 col-lg-8 tabs">
+    <mat-tab-group mat-align-tabs="center" style="background-color: white">
+      <mat-tab label="Profile details">
+        <app-profile-details></app-profile-details>
+      </mat-tab>
+      <mat-tab label="Address">
+        <app-address></app-address>
+      </mat-tab>
+      <mat-tab label="Employment terms">
+        <app-employment-terms></app-employment-terms>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+
+</div>
+</div>

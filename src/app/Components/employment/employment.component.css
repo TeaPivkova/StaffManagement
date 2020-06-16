@@ -1,0 +1,26 @@
+.container{
+  background-color: lightgrey;
+  margin-top: 20px;
+}
+
+.tabs{
+  margin-top: 10px;
+}
+
+.cards{
+  margin-top: 10px;
+}
+
+.complete{
+  margin-right: 5px;
+  float: right;
+  color: green;
+}
+
+.incomplete{
+  margin-right: 5px;
+  float: right;
+  color: red
+}
+
+
