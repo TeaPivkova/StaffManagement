@@ -28,6 +28,7 @@ import { EmploymentTermsComponent } from './Components/employment-terms/employme
 import {MatSelectModule} from '@angular/material/select';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import {RouterModule} from '@angular/router';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import {RouterModule} from '@angular/router';
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
-    CarouselModule
+    CarouselModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
