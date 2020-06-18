@@ -9,8 +9,11 @@ export class EmploymentComponent implements OnInit {
   selected = true;
   constructor() { }
 
-  isSelected(){
-    this.selected = !this.selected;
+  isSelected1(){
+    this.selected = true;
+  }
+  isSelected2(){
+    this.selected = false;
   }
   ngOnInit(): void {
 
