@@ -8,8 +8,8 @@
 
       <mat-form-field style="width: 100%">
         <mat-select value="option1">
-          <mat-option value="option1">Employment</mat-option>
-          <mat-option value="option2">Performance</mat-option>
+          <mat-option value="option1">Employment </mat-option>
+          <mat-option value="option2" (click)="isSelected()">Performance</mat-option>
         </mat-select>
       </mat-form-field>
 
@@ -30,6 +30,8 @@
   </div>
 
   <div class="col-sm-12 col-md-8 col-lg-8 tabs">
+
+  <div *ngIf="selected">
     <mat-tab-group mat-align-tabs="center" style="background-color: white">
       <mat-tab label="Profile details">
         <app-profile-details></app-profile-details>
@@ -43,5 +45,19 @@
     </mat-tab-group>
   </div>
 
-</div>
+  <div *ngIf="!selected">
+    <mat-tab-group mat-align-tabs="center" style="background-color: white">
+      <mat-tab label="Education">
+      </mat-tab>
+      <mat-tab label="Responsibilities">
+      </mat-tab>
+      <mat-tab label="Development">
+      </mat-tab>
+      <mat-tab label="Performance Attendance">
+      </mat-tab>
+      <mat-tab label="Training">
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+
 </div>

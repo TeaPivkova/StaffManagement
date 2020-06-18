@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employment.component.css']
 })
 export class EmploymentComponent implements OnInit {
+  selected = true;
   constructor() { }
 
+  isSelected(){
+    this.selected = !this.selected;
+  }
   ngOnInit(): void {
+
   }
 
 }
